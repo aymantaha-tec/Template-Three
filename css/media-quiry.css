@@ -188,3 +188,26 @@
   }
 }
 /* end discount */
+/* start footer */
+@media (max-width: 767px) {
+  footer .container .one {
+    align-items: center;
+  }
+  footer .container .one p {
+    text-align: center;
+    max-width: 400px;
+  }
+  footer .container .two a {
+    text-align: center;
+  }
+  footer .container .three p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-area: 10px;
+  }
+  footer .container .three p i {
+    margin-bottom: 20px;
+  }
+}
+/* end footer */
