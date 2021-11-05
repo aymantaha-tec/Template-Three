@@ -50,6 +50,16 @@ ul {
   background-position: 0 0;
 }
 /* End Components */
+/* start body */
+body .up {
+  position: sticky;
+  --scondary-color: 0px;
+  left: calc(100% - 70px);
+  top: 93%;
+  z-index: 1000;
+  color: var(--main-color);
+}
+/* end body */
 /* Start Header */
 header {
   height: 60px;
@@ -57,6 +67,7 @@ header {
   position: relative;
   background-color: white;
   z-index: 2;
+  top: -47px;
 }
 header .container {
   display: flex;
@@ -1097,6 +1108,7 @@ header .ul-main ul li a {
 .events .child .text h3 {
   text-transform: capitalize;
   font-size: 30px;
+  text-align: center;
 }
 .events .child .text p {
   line-height: 1.6;
@@ -1618,7 +1630,7 @@ footer .container .one .icons a i {
   font-size: 20px;
 }
 footer .container .one p {
-  color: var(--paragraph-color);
+  color: #b9b9b9;
   line-height: 1.6;
   max-width: 220px;
 }
@@ -1629,7 +1641,7 @@ footer .container .two {
 footer .container .two a {
   text-decoration: none;
   position: relative;
-  color: var(--paragraph-color);
+  color: #b9b9b9;
   padding-block: 16px;
   transition: 0.3s;
   -webkit-transition: 0.3s;
@@ -1657,7 +1669,7 @@ footer .container .two a i {
 footer .container .three p {
   padding: 20px;
   margin-left: 20px;
-  color: var(--paragraph-color);
+  color: #b9b9b9;
   text-indent: -12px;
 }
 footer .container .three p i {
