@@ -734,6 +734,15 @@ header .ul-main ul li a {
 .team .social img {
   width: 80%;
   border-radius: 12px;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+.team .social .boxing:hover img {
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
 }
 .team .name {
   margin-left: 25%;
@@ -1665,4 +1674,4 @@ footer .foot {
   text-align: center;
   border-top: 2px solid var(--paragraph-color);
 }
-/*  end footer */
+/* end footer */
