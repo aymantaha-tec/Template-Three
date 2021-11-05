@@ -645,7 +645,7 @@ header .ul-main ul li a {
   top: -50px;
   right: 0;
   content: "";
-  background-image: url(/image/avatar-01.png);
+  background-image: url(../image/avatar-01.png);
   width: 80px;
   height: 80px;
   border-radius: 50%;
