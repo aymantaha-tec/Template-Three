@@ -1,11 +1,11 @@
 /* Start Variables */
 :root {
-  --main-color: #2299f3;
+  --main-color: #0372cb;
   --scondary-color: #ececec;
   --paragraph-color: #5a5a5a;
   --card-one-color: #f44036;
   --card-two-color: #009688;
-  --card-three-color: #03a9f4;
+  --card-three-color: #0593d3;
 }
 /* End Variables */
 /* Start Global Rules */
@@ -192,7 +192,7 @@ header .ul-main ul li a {
   font-weight: bold;
 }
 /* End Header */
-/* start section-one */
+/* Start Section-One */
 .section-one {
   z-index: 3;
 }
@@ -236,7 +236,8 @@ header .ul-main ul li a {
   color: var(--paragraph-color);
 }
 .section-one div + div img {
-  width: 650px;
+  width: 100%;
+  height: auto;
   animation-name: up-to-down;
   animation-duration: 1.5s;
   animation-iteration-count: infinite;
@@ -252,13 +253,13 @@ header .ul-main ul li a {
 }
 @keyframes up-to-down {
   0% {
-    margin-top: 0;
+    margin-bottom: 0;
   }
   50% {
-    margin-top: 30px;
+    margin-bottom: 60px;
   }
   0% {
-    margin-top: 0;
+    margin-bottom: 0;
   }
 }
 @keyframes up-to-down-down {
@@ -275,8 +276,8 @@ header .ul-main ul li a {
     margin-bottom: -30px;
   }
 }
-/* end section-one */
-/* start section-two */
+/* End Section-One */
+/* Start Section-Two */
 .title-h2 {
   display: flex;
   justify-content: center;
@@ -415,10 +416,11 @@ header .ul-main ul li a {
   }
 }
 .section-two .grid-card .card div img {
-  max-width: 250px;
+  max-width: 100%;
+  aspect-ratio: attr(width) / attr(height);
 }
-/* end section-two */
-/* start section- three */
+/* End Section-Two */
+/* Start Section-Three */
 .section-three {
   position: relative;
   background-color: var(--scondary-color);
@@ -461,7 +463,7 @@ header .ul-main ul li a {
 }
 .section-three .box div img {
   width: 100%;
-  height: 100%;
+  aspect-ratio: 1 / 1;
   transition: transform 0.3s linear;
   -webkit-transition: transform 0.3s linear;
   -moz-transition: transform 0.3s linear;
@@ -476,8 +478,8 @@ header .ul-main ul li a {
   -ms-transform: scale(1.3, 1.3) rotate(5deg);
   -o-transform: scale(1.3, 1.3) rotate(5deg);
 }
-/* end section- three */
-/* start section- four */
+/* End Section-Three */
+/* Start Section-Four */
 .section-four .cards-long {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -509,6 +511,7 @@ header .ul-main ul li a {
 }
 .section-four .cards-long .image img {
   width: 100%;
+  aspect-ratio: attr(width) / attr(height);
 }
 .section-four .card-one .image {
   position: relative;
@@ -633,8 +636,8 @@ header .ul-main ul li a {
 .section-four .card:hover a:before {
   width: 100%;
 }
-/* end section- four */
-/* start testimonials */
+/* End Section-Four */
+/* Start Testimonials */
 .testimonials {
   background-color: var(--scondary-color);
 }
@@ -663,7 +666,7 @@ header .ul-main ul li a {
   background-size: cover;
   border: 10px solid var(--scondary-color);
 }
-.testimonials .reviews .star h4 {
+.testimonials .reviews .star h3 {
   font-size: 20px;
   text-transform: capitalize;
 }
@@ -679,8 +682,8 @@ header .ul-main ul li a {
 .testimonials .reviews .star .full {
   color: #ffc107;
 }
-/* end testimonials */
-/* start team */
+/* End Testimonials */
+/* Start Team */
 .team .social {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -758,7 +761,7 @@ header .ul-main ul li a {
 .team .name {
   margin-left: 25%;
 }
-.team .name h4 {
+.team .name h3 {
   font-size: 25px;
   text-transform: capitalize;
   color: var(--main-color);
@@ -768,8 +771,8 @@ header .ul-main ul li a {
   text-transform: capitalize;
   margin-bottom: -20px;
 }
-/* end team */
-/* start services */
+/* End Team */
+/* Start Services */
 .services {
   position: relative;
   background-color: var(--scondary-color);
@@ -827,7 +830,7 @@ header .ul-main ul li a {
 .services .child .icon i {
   color: #d5d5d5;
 }
-.services .child .icon h5 {
+.services .child .icon h3 {
   color: var(--main-color);
   font-size: 30px;
   text-transform: capitalize;
@@ -861,8 +864,8 @@ header .ul-main ul li a {
   color: var(--main-color);
   text-transform: capitalize;
 }
-/* end services */
-/* start our skills */
+/* Start Services */
+/* Start Our Skills */
 .our-skills .parent {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
@@ -882,7 +885,7 @@ header .ul-main ul li a {
   gap: 10px;
   text-transform: uppercase;
 }
-.our-skills .dev h5 {
+.our-skills .dev h3 {
   font-size: 20px;
 }
 .our-skills .dev p {
@@ -948,8 +951,8 @@ header .ul-main ul li a {
     #eee 80%
   );
 }
-/* end our skills */
-/* start works */
+/* Start Our Skills */
+/* Start Works */
 .works {
   background-color: var(--scondary-color);
 }
@@ -999,7 +1002,7 @@ header .ul-main ul li a {
   direction: ltr;
   gap: 10px;
 }
-.works .parent .child div h4 {
+.works .parent .child div h3 {
   font-size: 25px;
   text-transform: capitalize;
 }
@@ -1013,8 +1016,8 @@ header .ul-main ul li a {
   width: 60px;
   height: 60px;
 }
-/* end works */
-/* start events */
+/* End Works */
+/* Start Events */
 .events {
   position: relative;
 }
@@ -1088,7 +1091,7 @@ header .ul-main ul li a {
 .events .child .time span:hover:before {
   background-color: var(--main-color);
 }
-.events .child .time span h4 {
+.events .child .time span h3 {
   font-size: 30px;
   color: var(--main-color);
   padding: 8px;
@@ -1156,8 +1159,8 @@ header .ul-main ul li a {
 .events form input:last-of-type:hover {
   background-color: #1b6dac;
 }
-/* end events */
-/* start pricing */
+/* End Events  */
+/* Start Pricing */
 .pricing {
   background-color: var(--scondary-color);
   position: relative;
@@ -1320,8 +1323,8 @@ header .ul-main ul li a {
   border-radius: 10px;
   margin-bottom: 30px;
 }
-/* end pricing */
-/* start videos */
+/* End Pricing  */
+/* Start Videos */
 .videos .main {
   display: flex;
   background-color: var(--scondary-color);
@@ -1373,16 +1376,17 @@ header .ul-main ul li a {
 }
 .videos .main .content .image img {
   width: 100%;
+  height: auto;
 }
 .videos .main .content .text {
   background-color: #fff;
   padding: 20px;
   text-transform: capitalize;
 }
-/* end videos */
-/* start awesome */
+/* End Videos */
+/* Start Awesome */
 .awesome {
-  background-image: url(../image/stats.jpg);
+  background-image: url(../image/stats.webp);
   position: relative;
   padding-block: 100px;
 }
@@ -1463,8 +1467,8 @@ header .ul-main ul li a {
   font-style: italic;
   color: var(--main-color);
 }
-/* end awesome */
-/* start discount */
+/* End Awesome */
+/* Start Discount */
 .discount {
   display: flex;
 }
@@ -1582,8 +1586,8 @@ header .ul-main ul li a {
   background-color: #f9f9f9;
   border-bottom: 1px solid var(--paragraph-color);
 }
-/* end discount */
-/* start footer */
+/* End Discount */
+/* Start Footer */
 footer {
   background-color: #191919;
 }
@@ -1686,4 +1690,4 @@ footer .foot {
   text-align: center;
   border-top: 2px solid var(--paragraph-color);
 }
-/* end footer */
+/* End Footer */
